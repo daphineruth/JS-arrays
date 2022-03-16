@@ -1,19 +1,20 @@
 const movements = [200, 450, -400, 3000, -650, -130];
-
-for (const movement of movements)  {
+  //adding counter
+  //for of method
+for (const[i, movement] of movements.entries())  {
    if (movement > 0)
     
    {
-       console.log(`you deposited ${movement}`);
+       console.log(`movement ${i+1}: you deposited ${movement}`);
    } else {
-       console.log(`you withdrew ${math.abs(movement)}`) ;
+       console.log(`movement ${i+1}: you withdrew ${math.abs(movement)}`) ;
    }
 
 
-       //for each loop
+       //for each method
 
-       movements.forEach(function(movement) {
-        if (movement > 0)
+       movements.forEach(function(mov, i, arr) {
+        if (mov > 0)
     
         {
             console.log(`you deposited ${movement}`);
